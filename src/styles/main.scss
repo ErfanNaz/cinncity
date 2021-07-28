@@ -7,6 +7,7 @@ $color-3: #fbb03b;
 $color-4: #ed7880;
 $color-5: #41210a;
 $color-6: #ee787f;
+$color-7: #f3e9f5;
 
 @keyframes slide-up {
   from {
@@ -42,6 +43,10 @@ h3,
 h4,
 main {
   font-family: "Comfortaa", cursive;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 @include media-breakpoint-down(sm) {
@@ -89,6 +94,28 @@ main {
   z-index: 2;
 }
 
+footer {
+  color: white;
+
+  a {
+    color: white;
+    
+    &:hover,
+    &:focus {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-color-0 {
+  background-color: $color-0;
+}
+
 .bg-color-1 {
   background-color: $color-1;
 }
@@ -103,6 +130,10 @@ main {
 
 .bg-color-4 {
   background-color: $color-4;
+}
+
+.bg-color-7 {
+  background-color: $color-7;
 }
 
 .cc-border-radius {
